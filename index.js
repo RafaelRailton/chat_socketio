@@ -9,7 +9,7 @@ io.on("connection",(socket)=>{
    });
    socket.on("msg",(data)=>{
        socket.emit("showmsg",data);
-        console.log(data);
+        console.log(data +'OIN');
    });
 });
 app.set("view engine","ejs");
